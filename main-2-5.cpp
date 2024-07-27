@@ -10,6 +10,6 @@ int main() {
 
     cout << "is array in decending order: " << is_descending(array, n) << endl;
 
-    return
+    return 0;
 }
 
