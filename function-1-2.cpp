@@ -1,14 +1,14 @@
 
-double array_mean(int array[], int n){
-    double sum = 0;
-    double average = 0;
-    for (int i=0; i<n; i++) {
-        if (n > 1){
-            sum += array[i];
-            average = sum/n;
-        } else {
-            return 0.0;
+int is_identity(int array[10][10]) {
+    for(int row=0; row<10; row++){
+        for(int col=0; col<10; row++){
+            if(row == col) {
+                if(array[row][col] != 1 || array[row][col] != 0) {
+                    return 0;
+                } else {
+                    return 1; 
+                }
+            } 
         }
     }
-    return average; 
 }

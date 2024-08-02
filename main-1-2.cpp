@@ -1,11 +1,24 @@
-#include <iostream>
+#include <iostream> 
 
-using namespace std;
+using namespace std; 
 
-extern double array_mean(int array[], int n);
+extern int is_identity(int array[10][10]);
 
-int main() {
-    int array[0]={};
-    cout << "for array the average is: " << array_mean(array, 0) << endl;
-    return 0.0; 
+int main () {
+    int array[10][10] = {
+        {1,0,0,0,0,0,0,0,0,0},
+        {0,1,0,0,0,0,0,0,0,0},
+        {0,0,1,0,0,0,0,0,0,0},
+        {0,0,0,1,0,0,0,0,0,0},
+        {0,0,0,0,1,0,0,0,0,0},
+        {0,0,0,0,0,1,0,0,0,0},
+        {0,0,0,0,0,0,1,0,0,0},
+        {0,0,0,0,0,0,0,1,0,0},
+        {0,0,0,0,0,0,0,0,1,0},
+        {0,0,0,0,0,0,0,0,0,1},
+    };
+
+    cout << "is this array an identity matrix (1 = true / 0 = false): " << is_identity(array) << endl;
+
+    return 0; 
 }
