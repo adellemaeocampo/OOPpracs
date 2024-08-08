@@ -1,6 +1,6 @@
 
 double arrayMin(double* array, int size) {
-    int *ptr, min;
+    double *ptr, min;
     min = array[0];
     ptr = &min;
 
