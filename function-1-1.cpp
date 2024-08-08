@@ -1,8 +1,6 @@
 
 double arrayMin(double* array, int size) {
-    double *ptr, min;
-    min = array[0];
-    ptr = &min;
+    int min = array[0];
 
     for(int i=0; i<size; i++) {
         if(array[i] > array[i+1]){
