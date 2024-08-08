@@ -1,18 +1,14 @@
 #include <iostream> 
 
-using namespace std;
+using namespace std; 
 
-extern int sum_diagonal(int array[4][4]);
+extern double arrayMin(double* array, int size); 
 
 int main () {
-    int array[4][4] = {
-        {1,2,3,4},
-        {5,6,7,8},
-        {9,10,11,12},
-        {13,14,15,16}
-    };
+    double array[5] = {3.0,2.0,1.0,4.0,5.0};
+    int size = 5; 
 
-    cout << "for 4x4 array, the sum of the diagonal is: " << sum_diagonal(array) << endl;
+    cout << "for array, the min value is: " << arrayMin(array, size) << endl;
 
     return 0;
 }
