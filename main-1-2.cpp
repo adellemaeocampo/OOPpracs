@@ -1,15 +1,20 @@
+#include <iostream> 
+#include "Person.h"
 
-// #include <iostream> 
+using namespace std; 
 
-
-extern void modifyArray(double* array, int size, double value);
+extern PersonList createPersonList(int n);
 
 int main() {
-    double array[5] = {3.0,2.0,1.0,4.0,5.0};
-    int size = 5; 
-    double value = 2;
+    int n = 5; 
 
-    // std::cout << modifyArray(array, size, value) << std::endl;
-    modifyArray(array, size, value);
-    return 0;
+    PersonList list = createPersonList(n);
+
+    for (int i=0; i<list.numPeople; i++) {
+        cout << "Person " << i+1 << ": " << list.people[i].name << " Age: " << list.people[i].age << endl;
+    }
+
+    delete [] list.people;
+
+    return 0; 
 }

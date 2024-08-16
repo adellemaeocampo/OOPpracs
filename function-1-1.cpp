@@ -1,14 +1,14 @@
 
-double arrayMin(double* array, int size) {
-    double *ptr, min;
-    min = array[0];
-    ptr = &min;
+#include "Person.h"
 
-    for(int i=0; i<size; i++) {
-        if(array[i] > array[i+1]){
-            min = array[i+1];
-        }
+
+Person* createPersonArray(int n) {
+    Person* array = new Person[n];
+
+    for(int i=0; i<n; i++) {
+        array[i].name = "John Doe";
+        array[i].age = 0;
     }
 
-    return min; 
+    return array; 
 }

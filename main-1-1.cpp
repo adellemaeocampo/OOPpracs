@@ -1,14 +1,24 @@
 #include <iostream> 
+#include "Person.h"
 
 using namespace std; 
 
-extern double arrayMin(double* array, int size); 
+extern Person* createPersonArray(int n);
 
-int main () {
-    double array[5] = {3.0,2.0,1.0,4.0,5};
-    int size = 5; 
+int main() {
+    int n = 5; 
 
-    cout << "for array, the min value is: " << arrayMin(array, size) << endl;
+    Person* people = createPersonArray(5);
+
+    for(int i=0; i<n; i++) {
+        cout << "Person " << i+1 << ": " << people[i].name << " Age: " << people[i].age << endl;
+    }
+
+    delete [] people; 
 
     return 0;
+
+
+
+
 }

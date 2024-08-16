@@ -1,8 +1,13 @@
+#include "Person.h"
 
-void modifyArray(double* array, int size, double value) {
-    
-    for(int i=0; i<size; i++) {
-        array[i] = array[i] + value;
+PersonList createPersonList(int n) {
+    PersonList personlist; 
+    personlist.numPeople = n;
+
+    for(int i=0; i<n; i++) {
+        personlist.people[i].name = "Jane Doe";
+        personlist.people[i].age = 1; 
     }
 
+    return personlist; 
 }
