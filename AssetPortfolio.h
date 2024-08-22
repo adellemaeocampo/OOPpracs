@@ -1,7 +1,7 @@
 #ifndef ASSETPORTFOLIO_H
 #define ASSETPORTFOLIO_H
 
-#include "Asset.cpp"
+#include "Asset.h"
 
 #include<string> 
 
