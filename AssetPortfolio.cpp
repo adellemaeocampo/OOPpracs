@@ -19,7 +19,10 @@ int AssetPortfolio::get_num_assets(){
     return size;
 }
 
-        
+Asset* AssetPortfolio::get_assets(){
+    return assets; 
+}  
+
 bool AssetPortfolio::has_asset(string product){
     for (int i=0; i<size; i++) {
         if(assets[i].get_product_type() == product){
