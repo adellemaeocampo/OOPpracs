@@ -1,7 +1,4 @@
 #include "AssetPortfolio.h"
-#include <string> 
-
-using namespace std; 
 
 AssetPortfolio::AssetPortfolio() {
     int size = 0;
@@ -27,7 +24,7 @@ bool AssetPortfolio::has_asset(string product){
             return false;
         }
     }
-
+    return 0;
 }
 
 bool AssetPortfolio::add_asset(Asset new_asset){
@@ -35,6 +32,7 @@ bool AssetPortfolio::add_asset(Asset new_asset){
         assets[size++] = new_asset; 
         return true; 
     }
+    return 0;
 }
 
 AssetPortfolio::~AssetPortfolio(){
