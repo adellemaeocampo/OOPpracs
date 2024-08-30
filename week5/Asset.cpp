@@ -1,8 +1,8 @@
 #include "Asset.h"
 
 Asset::Asset(){
-    int value = 0;
-    string product_type = "";
+    this->value = 0;
+    this->product_type = "";
 }
 
 Asset::Asset(int value, string product_type){ 

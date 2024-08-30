@@ -5,14 +5,16 @@
 using namespace std;
 
 AssetPortfolio::AssetPortfolio() {
-    int size = 0;
-    string product = ""; 
-    int max = 10;
-    Asset* assets = nullptr; 
+    this->size = 0;   
+    this->product = ""; 
+    this->max = 10;
+    this->assets = new Asset[max]; 
 }
 
 AssetPortfolio::AssetPortfolio(int size) {
     this->size = size;  
+    this->max = 10;
+    this->assets = new Asset[max]; 
 }
 
 int AssetPortfolio::get_num_assets(){
