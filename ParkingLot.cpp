@@ -18,7 +18,7 @@ bool ParkingLot::parkVehicle(Vehicle* vehicle){
         curParked++;
         return true; 
     } else {
-        cout << "parkinglot is full" << endl;
+        cout << "The lot is full" << endl;
         return false; 
     }
 }
@@ -36,7 +36,11 @@ bool ParkingLot::unparkVehicle(int ID){
             return true; 
         }
     }
-    cout << "Vehicle not in the parkinglot" << endl;
+    cout << "Vehicle not in the lot" << endl;
     return false;
+}
+
+int ParkingLot::countOverstayingVehicles(int maxParkingDuration){
+
 }
 
