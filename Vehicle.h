@@ -13,22 +13,5 @@ class Vehicle {
         Vehicle(int ID);
 };
 
-class Car : public Vehicle {
-    public:
-        Car(int ID);
-        int getParkingDuration(); 
-};
-
-class Bus : public Vehicle {
-     public:
-        Bus(int ID);
-        int getParkingDuration(); 
-};
-
-class Moterbike : public Vehicle {
-     public:
-        Moterbike(int ID);
-        int getParkingDuration(); 
-};
 
 #endif
