@@ -2,12 +2,13 @@
 #include"Motorbike.h"
 
 #include<ctime>
+#include <iostream>
 
 using namespace std;
 
-Moterbike::Moterbike(int ID) : Vehicle::Vehicle(ID){}
+Motorbike::Motorbike(int ID) : Vehicle::Vehicle(ID){}
 
-int Moterbike::getParkingDuration(){
+int Motorbike::getParkingDuration(){
     int parkedTime =  Vehicle::getParkingDuration();
     return parkedTime*0.85;
 }
