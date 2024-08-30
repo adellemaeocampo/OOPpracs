@@ -11,7 +11,9 @@ class Vehicle {
         time_t timeOfEntry; 
     public:
         Vehicle(int ID);
+        virtual int getParkingDuration(); 
 };
+
 
 
 #endif
