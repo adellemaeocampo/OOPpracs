@@ -9,6 +9,6 @@ using namespace std;
 Motorbike::Motorbike(int ID) : Vehicle::Vehicle(ID){}
 
 int Motorbike::getParkingDuration(){
-    int parkedTime =  Vehicle::getParkingDuration();
-    return parkedTime*0.85;
+    int parkDur =  Vehicle::getParkingDuration();
+    return parkDur*0.85;
 }

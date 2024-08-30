@@ -4,9 +4,7 @@
 
 using namespace std; 
 
-Vehicle::Vehicle(int ID) : ID(ID) {
-    time_t timeOfEntry = time(nullptr);
-}
+Vehicle::Vehicle(int ID) : ID(ID), timeOfEntry(time(nullptr)) {}
 
 int Vehicle::getID(){
     return ID; 
