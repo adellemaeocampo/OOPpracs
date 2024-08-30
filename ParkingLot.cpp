@@ -8,7 +8,7 @@ ParkingLot::ParkingLot(int max) : max(max), curParked(0){
     vehicles = new Vehicle*[max];
 }
 
-int ParkingLot::getcount(){
+int ParkingLot::getCount(){
     return curParked;
 }
 
