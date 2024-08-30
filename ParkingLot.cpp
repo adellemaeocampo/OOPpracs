@@ -5,7 +5,7 @@
 using namespace std; 
 
 ParkingLot::ParkingLot(int max) : max(max), curParked(0){
-    Vehicle** vehicles = new Vehicle*[max];
+    vehicles = new Vehicle*[max];
 }
 
 int ParkingLot::getcount(){

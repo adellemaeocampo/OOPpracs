@@ -10,7 +10,7 @@ class ParkingLot {
         Vehicle** vehicles; 
     public:
         ParkingLot(int max);
-        int getcount();
+        int getCount();
         bool parkVehicle(Vehicle* vehicle);
         bool unparkVehicle(int ID);
 };
