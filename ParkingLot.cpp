@@ -1,5 +1,5 @@
 #include"ParkingLot.h"
-
+#include"Vehicle.h"
 #include<iostream>
 
 using namespace std; 
@@ -18,7 +18,7 @@ bool ParkingLot::parkVehicle(Vehicle* vehicle){
         curParked++;
         return true; 
     } else {
-        cout << "parkinglot is full." << endl;
+        cout << "parkinglot is full" << endl;
         return false; 
     }
 }
@@ -28,9 +28,9 @@ bool ParkingLot::unparkVehicle(int ID){
         if(ID==vehicles[i]->getID()){
             delete vehicles[i];
 
-            for(int j=i; i<curParked-1; j++){
+            for(int j=i; j<curParked-1; j++){
                 vehicles[j] = vehicles[j-1];
-                curParked --;
+                curParked--;
             }
 
             return true; 
