@@ -9,7 +9,7 @@ using namespace std;
 class Car : public Vehicle {
     public:
         Car(int ID);
-        int getParkingDuration(); 
+        int getParkingDuration() override; 
 };
 
 #endif

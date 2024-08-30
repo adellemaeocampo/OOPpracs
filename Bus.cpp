@@ -5,10 +5,9 @@
 
 using namespace std; 
 
-Bus::Bus(int ID) : Vehicle(ID){}
+Bus::Bus(int ID) : Vehicle::Vehicle(ID){}
 
 int Bus::getParkingDuration(){
-    int secondsParked =  difftime(time(0), timeOfEntry);
-    int busRed = secondsParked * 0.25; 
-    return busRed; 
+    int parkedTime = Vehicle::getParkingDuration();
+    return parkedTime * 0.25;
 }
