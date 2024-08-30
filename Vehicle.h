@@ -14,6 +14,4 @@ class Vehicle {
         virtual int getParkingDuration(); 
 };
 
-
-
 #endif

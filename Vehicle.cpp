@@ -9,7 +9,7 @@ Vehicle::Vehicle(int ID) : ID(ID) {
 }
 
 int Vehicle::getParkingDuration(){
-    int secondsParked =  difftime(time(nullptr), timeOfEntry);
+    int secondsParked =  difftime(time(0), timeOfEntry);
     return secondsParked;
 }
 
