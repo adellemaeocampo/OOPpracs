@@ -15,7 +15,7 @@ int main(){
 
     arr[0] = new Car(1);
     arr[1] = new Bus(2);
-    arr[2] = new Moterbike(3); 
+    arr[2] = new Motorbike(3); 
    
 
    for(int i=0; i<numVehicles; i++) {
