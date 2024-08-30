@@ -21,7 +21,19 @@ int main(){
     Motorbike* motorbike1 = new Motorbike(9);
     Motorbike* motorbike2 = new Motorbike(10);
 
-    cout << parkinglot.countOverstayingVehicles(15) << endl;
+    parkinglot.parkVehicle(car1);
+    parkinglot.parkVehicle(car2);
+    parkinglot.parkVehicle(car3);
+    parkinglot.parkVehicle(car4);
+    parkinglot.parkVehicle(car5);
+    parkinglot.parkVehicle(bus1);
+    parkinglot.parkVehicle(bus2);
+    parkinglot.parkVehicle(bus3);
+    parkinglot.parkVehicle(motorbike1);
+    parkinglot.parkVehicle(motorbike2);
+ 
 
-    retun 0;
+    cout << "Number of overstaying vehicles: " << parkinglot.countOverstayingVehicles(15) << endl;
+
+    return 0;
 }
