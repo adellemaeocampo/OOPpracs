@@ -18,7 +18,7 @@ public:
   // int getGridHeight();
   // static int getActiveGridItemCount();
 
-  int activeGridItemCount = 0;
+  // int activeGridItemCount = 0;
 
   GridItem() : x(0), y(0), width(0), height(0) {
       activeGridItemCount++;
