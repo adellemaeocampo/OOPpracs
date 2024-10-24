@@ -20,15 +20,15 @@ void GridItem::setCoordinates(int x, int y) {
     this->y = y;
 }
 
-std::pair<int, int> GridItem::getCoordinates() const {
+std::pair<int, int> GridItem::getCoordinates() {
     return std::make_pair(x, y);
 }
 
-int GridItem::getGridWidth() const {
+int GridItem::getGridWidth() {
     return width;
 }
 
-int GridItem::getGridHeight() const {
+int GridItem::getGridHeight() {
     return height;
 }
 
